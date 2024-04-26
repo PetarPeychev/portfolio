@@ -40,7 +40,7 @@ export function Projects() {
             <h3 className="text-neutral-900 dark:text-neutral-100 text-lg tracking-tight">
               {project.title}
             </h3>
-            <p className="text-neutral-700 dark:text-neutral-200 tracking-tight">
+            <p className="text-neutral-600 dark:text-neutral-300 tracking-tight">
               {project.description}
             </p>
           </div>
