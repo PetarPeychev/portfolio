@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { DarkModeToggle } from "app/components/dark-mode-toggle";
 
 const navItems = {
   "/": {
@@ -7,6 +8,9 @@ const navItems = {
   "/blog": {
     name: "blog",
   },
+  "/resume.pdf": {
+    name: "résumé",
+  },
 };
 
 export function Navbar() {
@@ -14,7 +18,7 @@ export function Navbar() {
     <aside className="-ml-[8px] mb-8 tracking-tight">
       <div className="lg:sticky lg:top-20">
         <nav
-          className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+          className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative w-4/5 inline-flex"
           id="nav"
         >
           <div className="flex flex-row space-x-0 pr-10">
@@ -31,6 +35,9 @@ export function Navbar() {
             })}
           </div>
         </nav>
+        <div className="float-right inline-flex mt-2">
+          <DarkModeToggle />
+        </div>
       </div>
     </aside>
   );
