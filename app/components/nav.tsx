@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { DarkModeToggle } from "app/components/dark-mode-toggle";
+import dynamic from "next/dynamic";
 
 const navItems = {
   "/": {
@@ -12,6 +12,13 @@ const navItems = {
     name: "résumé",
   },
 };
+
+const DynamicDarkModeToggle = dynamic(
+  () => import("app/components/dark-mode-toggle"),
+  {
+    ssr: false,
+  }
+);
 
 export function Navbar() {
   return (
@@ -37,7 +44,7 @@ export function Navbar() {
         </nav>
         <div className="float-right inline-flex mt-1">
           <div className="mr-2">
-            <DarkModeToggle />
+            <DynamicDarkModeToggle />
           </div>
         </div>
       </div>

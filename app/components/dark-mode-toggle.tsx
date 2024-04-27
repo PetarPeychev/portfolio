@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-export function DarkModeToggle() {
+export default function DarkModeToggle() {
   const isDark = () => localStorage.getItem("theme") === "dark";
   const setIsDark = (value: boolean) => {
     const darkIcon = document.getElementById("dark-icon");
