@@ -35,8 +35,10 @@ export function Navbar() {
             })}
           </div>
         </nav>
-        <div className="float-right inline-flex mt-2">
-          <DarkModeToggle />
+        <div className="float-right inline-flex mt-1">
+          <div className="mr-2">
+            <DarkModeToggle />
+          </div>
         </div>
       </div>
     </aside>
