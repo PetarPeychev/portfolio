@@ -22,7 +22,17 @@ export default function Page() {
         computer programmer, data wrangler, language design enthusiast
         <br />
         <br />
-        data engineer at{" "}
+        former software engineer at{" "}
+        <a
+          href="https://lovesparkle.life/"
+          className="text-sky-600"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Sparkle Wellness
+        </a>
+        <br />
+        former data engineer at{" "}
         <a
           href="https://www.theverygroup.com/"
           className="text-sky-600"

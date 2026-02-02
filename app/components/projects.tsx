@@ -3,10 +3,10 @@ import Link from "next/link";
 export function Projects() {
   let projects = [
     {
-      title: "Chiron",
+      title: "Sageleaf",
       description:
-        "Personalised chess coach which collects game data, highlights common mistakes and offers better alternatives. Built with Python, Django, Flask, Materialize CSS and deployed on GCP.",
-      url: "https://github.com/PetarPeychev/chiron",
+        "Experimental work on a procedural programming language with garbage collection, static types, null-safety, errors as values, algebraic data types and pattern matching.",
+        url: "https://github.com/PetarPeychev/sageleaf",
     },
     {
       title: "Test Signer Service",
@@ -15,10 +15,10 @@ export function Projects() {
       url: "https://github.com/PetarPeychev/test-signer-service",
     },
     {
-      title: "Lion",
+      title: "Tast Scheduler",
       description:
-        "Stack-based concatenative programming language with an interpreter written in Python.",
-      url: "https://github.com/PetarPeychev/lion",
+        "Distributed event-driven task scheduler and executors using Go and NATS.",
+      url: "https://github.com/PetarPeychev/go-task-scheduler",
     },
     {
       title: "CHIP-8 Emulator",
